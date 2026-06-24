@@ -5,9 +5,9 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-  Use:   "aoc2025",
-  Short: "Runs each aoc day",
-  Long: "Runs each oac day",
+	Use:   "aoc2025",
+	Short: "Runs each aoc day",
+	Long:  "Runs each oac day",
 }
 
 func Execute() error {
@@ -16,4 +16,5 @@ func Execute() error {
 
 func init() {
 	rootCmd.AddCommand(dayOne)
+	rootCmd.AddCommand(dayTwo)
 }
