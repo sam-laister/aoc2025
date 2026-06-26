@@ -8,21 +8,21 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var day1 = &cobra.Command{
-	Use:   "1",
-	Short: "Day One",
+var day4 = &cobra.Command{
+	Use:   "4",
+	Short: "Day 4",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		txt, err := services.ReadDay("1")
+		txt, err := services.ReadDay("4")
 		if err != nil {
 			return err
 		}
 
-		partA, err := solutions.Day01PartA(txt)
+		partA, err := solutions.Day04PartA(txt, false)
 		if err != nil {
 			return err
 		}
 
-		partB, err := solutions.Day01PartB(txt)
+		partB, err := solutions.Day04PartB(txt, false)
 		if err != nil {
 			return err
 		}
@@ -35,5 +35,5 @@ var day1 = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(day1)
+	rootCmd.AddCommand(day4)
 }

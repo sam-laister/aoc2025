@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var dayThree = &cobra.Command{
+var day3 = &cobra.Command{
 	Use:   "3",
 	Short: "Day Three",
 	RunE: func(cmd *cobra.Command, args []string) error {
@@ -32,4 +32,8 @@ var dayThree = &cobra.Command{
 
 		return nil
 	},
+}
+
+func init() {
+	rootCmd.AddCommand(day3)
 }
