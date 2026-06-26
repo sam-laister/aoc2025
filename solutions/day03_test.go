@@ -28,7 +28,7 @@ func TestDay03PartB(t *testing.T) {
 		t.Fatalf("failed to read sample input: %v", err)
 	}
 
-	got, err := Day03PartB(string(input), true)
+	got, err := Day03PartB(string(input), false)
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
