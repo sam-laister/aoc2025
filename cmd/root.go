@@ -17,4 +17,5 @@ func Execute() error {
 func init() {
 	rootCmd.AddCommand(dayOne)
 	rootCmd.AddCommand(dayTwo)
+	rootCmd.AddCommand(dayThree)
 }
