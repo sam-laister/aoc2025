@@ -2,3 +2,4 @@ inputs/*
 !inputs/.keep
 
 inputs.bak/
+cover.out
