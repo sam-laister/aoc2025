@@ -31,3 +31,10 @@ go test ./solutions/...
 ```
 
 Place sample input in `inputs/<day>-sample.txt` before running tests.
+
+## Scripts
+
+| Script | Description |
+|--------|-------------|
+| `scripts/run_tests.sh` | Run the full test suite |
+| `scripts/gen_report.sh` | Run tests with coverage and open an HTML coverage report |
